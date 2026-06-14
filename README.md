@@ -1,63 +1,62 @@
 # ML-from-Scratch
 
-A complete **machine learning library built from scratch**, using only **NumPy**.  
-This project implements fundamental ML algorithms step-by-step without relying on scikit-learn or other machine-learning frameworks.
+A machine learning library I built from scratch using only **NumPy**.
 
-The goal is to deeply understand how core ML models work internally by manually writing:
-- Forward passes  
-- Loss functions  
-- Gradients  
-- Training loops  
-- Metrics  
-- Data generation  
-- Visualizations  
+The main goal of this project was to better understand how machine learning algorithms actually work under the hood instead of relying on libraries like scikit-learn. Every model was implemented manually, including the training process, loss calculations, gradient updates, and prediction logic.
 
-Perfect for study, research, and portfolio demonstration.
+While building this project, I focused on writing everything myself—from the mathematical foundations to the optimization routines—to get a deeper understanding of the algorithms.
 
----
+## What’s Included
 
-## 🚀 Features
+### Linear Regression
 
-### ✔️ Linear Models
-- **Linear Regression**  
-  - Gradient Descent Optimization  
-  - Mean Squared Error Loss  
-  - Plotting fitted regression line
+* Gradient Descent training
+* Mean Squared Error (MSE) loss
+* Regression line visualization
 
-- **Logistic Regression**  
-  - Sigmoid function  
-  - Binary cross-entropy loss  
-  - Decision boundary visualization  
-  - Loss curve plot
+### Logistic Regression
 
-- **Softmax Regression (Multiclass Logistic Regression)**  
-  - Softmax function  
-  - Cross-entropy loss  
-  - Multiclass predictions
+* Sigmoid activation
+* Binary Cross-Entropy loss
+* Classification predictions
+* Decision boundary visualization
+* Training loss plots
 
----
+### Softmax Regression
 
-### ✔️ Tree Models
-- **Decision Tree Classifier**  
-  - Gini impurity  
-  - Recursive splitting  
-  - Max depth + min samples constraints  
-  - Pure NumPy implementation  
-  - Predicts by traversing the tree
+* Multiclass classification
+* Softmax activation
+* Cross-Entropy loss
+* Probability-based predictions
 
----
+### Decision Tree Classifier
 
-## 🧪 Tests
+* Gini impurity splitting criterion
+* Recursive tree construction
+* Maximum depth and minimum sample constraints
+* Tree traversal for predictions
+* Implemented entirely with NumPy
 
-Each model includes its own test file under `/src`:
+## Project Structure
 
-- `test_linear_regression.py`
-- `test_logistic_regression.py`
-- `test_softmax_regression.py`
-- `test_decision_tree.py`
-- `test_metrics.py`
+Each model has its own test file located in the `src` directory:
+
+```bash
+test_linear_regression.py
+test_logistic_regression.py
+test_softmax_regression.py
+test_decision_tree.py
+test_metrics.py
+```
 
 To run a test:
 
 ```bash
 python src/test_linear_regression.py
+```
+
+## Why I Built This
+
+I created this project as a learning exercise to strengthen my understanding of machine learning fundamentals. Building these algorithms from scratch helped me understand concepts like gradient descent, optimization, loss functions, decision boundaries, and tree-based learning at a much deeper level than simply using existing libraries.
+
+This project is still growing, and I plan to continue adding more algorithms and improvements over time.
